@@ -1,0 +1,383 @@
+/***********************
+        MOBILE 
+***********************/
+
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+}
+
+img {
+  width: 100%;
+}
+
+#page-body.three-col, #page-body.no-sidebar {
+  background: transparent;
+}
+
+html {
+  
+  body {
+    
+    div#root {
+      
+      div {
+        text-align: center;
+        
+        h2 {
+          margin: 0 0 20px 0;  
+        }
+        
+        div {
+          
+          &.survey_list {
+            display: flex;
+            flex-wrap: wrap;
+          }
+      
+          &#image_carousel {
+            
+            div {
+              
+              &#image_container {
+                position: relative;
+                
+                img {
+                  
+                }
+                
+                p {
+              
+                  &#count_display {
+                    position: absolute;
+                    right: 5px;
+                    top: 5px;
+                    color: white;
+                    background-color: rgba(0, 0, 0, .7);
+                    padding: 5px;
+                    border-radius: 5px;
+                    line-height: 1;
+                  }
+                }
+              }
+            }
+            
+            img {
+              
+              &.arrow {
+                width: auto;
+                position: absolute;
+                top: 50%;
+                transition: opacity .3s ease-in;
+                
+                &:hover {
+                  opacity: 1;
+                  cursor: pointer;
+                }
+              }
+
+              &#left_arrow {
+                left: 15%;
+              }
+
+              &#right_arrow {
+                right: 15%;
+              }
+            }
+          }
+            
+          div{
+
+            &.survey {
+              float: none;
+              margin-bottom: 20px;
+              flex-basis: 100%;
+              
+              h3 {
+                margin-bottom: 10px;  
+              }
+              
+              div {
+                
+                &.nwidget {
+                  height: 100%;
+                  
+                  div {
+                    
+                    &.panel {
+                      height: 100%;
+                    }
+                  }
+                }
+              
+                &.questionnaire_list {
+
+                  div {
+
+                    &.questionnaire {
+                      
+                      text-align: center;
+                      
+                      a {
+                      
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    
+    footer {
+      
+      h2 {
+        margin: 40px 0 10px 0;
+      }
+    }
+  }
+}
+
+/***********************
+        MIN-WIDTH 700PX
+***********************/
+
+@media screen and (min-width: 700px) {
+  
+  h1, h2, h3, h4, h5, h6 {
+
+  }
+
+  img {
+
+  }
+
+  html {
+
+    body {
+
+      div#root {
+
+        div {
+
+          h2 {
+
+          }
+
+          div {
+
+            &.survey_list {
+
+            }
+
+            &#image_carousel {
+              text-align: center;
+              position: relative;
+              margin: 0 auto;
+
+              div {
+
+                &#image_container {
+                  display: inline-block;
+
+                  img {
+                    border-radius: 5px;
+                    width: auto;
+                  }
+
+                  p {
+
+                    &#count_display {
+                      
+                    }
+                  }
+                }
+              }
+
+              img {
+
+                &.arrow {
+                  width: auto;
+                  position: absolute;
+                  top: 50%;
+                  display: block;
+                }
+
+                &#left_arrow {
+                  left: 15%;
+                }
+
+                &#right_arrow {
+                  right: 15%;
+                }
+              }
+            }
+
+            div{
+
+              &.survey {
+                
+                flex-basis: 49%;
+                
+                h3 {
+ 
+                }
+
+                div {
+
+                  &.nwidget {
+
+                    div {
+
+                      &.panel {
+
+                      }
+                    }
+                  }
+
+                  &.questionnaire_list {
+
+                    div {
+
+                      &.questionnaire {
+
+                        a {
+
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      footer {
+
+        h2 {
+          margin: 40px 0 10px 0;
+        }
+      }
+    }
+  }
+}
+
+/***********************
+        MIN-WIDTH 1000PX
+***********************/
+
+@media screen and (min-width: 1000px) {
+  
+  h1, h2, h3, h4, h5, h6 {
+
+  }
+
+  img {
+
+  }
+
+  html {
+
+    body {
+
+      div#root {
+
+        div {
+
+          h2 {
+
+          }
+
+          div {
+
+            &.survey_list {
+
+            }
+
+            &#image_carousel {
+
+              div {
+
+                &#image_container {
+
+                  img {
+
+                  }
+
+                  p {
+
+                    &#count_display {
+
+                    }
+                  }
+                }
+              }
+
+              img {
+
+                &.arrow {
+
+                }
+
+                &#left_arrow {
+
+                }
+
+                &#right_arrow {
+ 
+                }
+              }
+            }
+
+            div{
+
+              &.survey {
+                flex-basis: 33%;
+                
+                h3 {
+ 
+                }
+
+                div {
+
+                  &.nwidget {
+
+                    div {
+
+                      &.panel {
+
+                      }
+                    }
+                  }
+
+                  &.questionnaire_list {
+
+                    div {
+
+                      &.questionnaire {
+
+                        a {
+
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      footer {
+
+        h2 {
+          margin: 40px 0 10px 0;
+        }
+      }
+    }
+  }
+}
