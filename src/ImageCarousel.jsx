@@ -31,8 +31,9 @@ export default class ImageCarousel extends React.Component {
       this.updateViewSize();
       this.resizeImage();
     }.bind(this));
-    
-    window.onload = function() {
+  }
+
+  componentDidMount() {
       this.updateViewSize();
       this.resizeImage();
       this.setState({
@@ -41,9 +42,12 @@ export default class ImageCarousel extends React.Component {
         },
         countDisplayStyle: {
           display: "block" 
+        },
+        imageStyle: {
+          maxHeight: this.state.inMobile ? "none" : (window.visualViewport.height + "px"),
+          display: "block"
         }
       })
-    }.bind(this);
   }
   
   prevImage() {
