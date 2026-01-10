@@ -18,11 +18,13 @@ img {
 }
 html body {
   color: #333333;
+  background-color: #333333;
 }
 html body div#root div {
   text-align: center;
 }
 html body div#root div h2 {
+  color: #F2F2F2;
   margin: 40px 0;
   font-size: 2.5em;
 }
@@ -36,7 +38,6 @@ html body div#root div div.survey_list > * {
   border: 1px solid #CCC;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 5px 5px 11px -1px #DDD;
 }
 html body div#root div div#image_carousel div#image_container {
   position: relative;
@@ -54,7 +55,7 @@ html body div#root div div#image_carousel div#image_container p#count_display {
 html body div#root div div#image_carousel img.arrow {
   width: auto;
   position: absolute;
-  top: 50%;
+  top: calc(50% - 32px);
   transition: opacity 0.3s ease-in;
 }
 html body div#root div div#image_carousel img.arrow:hover {
@@ -62,12 +63,16 @@ html body div#root div div#image_carousel img.arrow:hover {
   cursor: pointer;
 }
 html body div#root div div#image_carousel img#left_arrow {
-  left: 15%;
+  left: 5%;
 }
 html body div#root div div#image_carousel img#right_arrow {
-  right: 15%;
+  right: 5%;
+}
+html body div#root div div div.survey {
+  background-color: #F2F2F2;
 }
 html body div#root div div div.survey h3 {
+  font-size: 1.7em;
   margin-bottom: 10px;
 }
 html body div#root div div div.survey div.nwidget {
@@ -120,14 +125,7 @@ html body footer h2 {
   html body div#root div div#image_carousel img.arrow {
     width: auto;
     position: absolute;
-    top: 50%;
     display: block;
-  }
-  html body div#root div div#image_carousel img#left_arrow {
-    left: 15%;
-  }
-  html body div#root div div#image_carousel img#right_arrow {
-    right: 15%;
   }
   html body footer h2 {
     margin: 40px 0 10px 0;
@@ -142,5 +140,21 @@ html body footer h2 {
   }
   html body footer h2 {
     margin: 40px 0 10px 0;
+  }
+}
+/***********************
+        MIN-WIDTH 1800PX
+***********************/
+@media screen and (min-width: 1800px) {
+  html body div#root div div.survey_list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+/***********************
+        MIN-WIDTH 2200PX
+***********************/
+@media screen and (min-width: 2200px) {
+  html body div#root div div.survey_list {
+    grid-template-columns: repeat(5, 1fr);
   }
 }
