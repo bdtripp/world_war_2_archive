@@ -23,8 +23,12 @@ html body {
 html body div#root div {
   text-align: center;
 }
-html body div#root div h2 {
+html body div#root div h2,
+html body div#root div h3 {
   color: #F2F2F2;
+  font-size: 1.8em;
+}
+html body div#root div h2 {
   margin: 40px 0;
   font-size: 2.5em;
 }
