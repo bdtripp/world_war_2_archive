@@ -55,7 +55,7 @@ $(
       const root = ReactDOM.createRoot(container);
       root.render(
         <div>
-          <h2>Surveys</h2>
+          <h2>World War II Soldier Surveys</h2>
           <SurveyList surveys={surveys} questionnaires={questionnaires} />
         </div>
       );
@@ -107,7 +107,7 @@ $(
         const root = ReactDOM.createRoot(container);
         root.render(
           <div>
-            <h2>Responses</h2>
+            <h2>World War II Soldier Survey Responses</h2>
             <h3>{filteredSurvey.SURVEYS_topics} ({filteredQuestionnaire.QUESTIONNAIRES_name})</h3>
             <ImageCarousel imgNames = {filteredImages} />
           </div>

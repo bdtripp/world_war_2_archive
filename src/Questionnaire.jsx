@@ -3,7 +3,6 @@ import React from 'react';
 export default class Questionnaire extends React.Component {
   render() {
     var questionnaire = this.props.questionnaire;
-    var responses = this.props.responses;
     
     return (
       <div className="questionnaire">
