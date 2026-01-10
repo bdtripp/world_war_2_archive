@@ -1,3 +1,6 @@
+@dark-grey: #333333;
+@off-white: #F2F2F2;
+
 /***********************
         MOBILE 
 ***********************/
@@ -17,6 +20,7 @@ img {
 html {
   
   body {
+    color: @dark-grey;
     
     div#root {
       
@@ -24,14 +28,24 @@ html {
         text-align: center;
         
         h2 {
-          margin: 0 0 20px 0;  
+          margin: 40px 0;
+          font-size: 2.5em;  
         }
         
         div {
           
           &.survey_list {
-            display: flex;
-            flex-wrap: wrap;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            margin: 0 10px 30px 10px;
+
+            & > * {
+              border: 1px solid #CCC;
+              padding: 20px;
+              border-radius: 10px;
+              box-shadow: 5px 5px 11px -1px #DDD;
+            }      
           }
       
           &#image_carousel {
@@ -88,9 +102,6 @@ html {
           div{
 
             &.survey {
-              float: none;
-              margin-bottom: 20px;
-              flex-basis: 100%;
               
               h3 {
                 margin-bottom: 10px;  
@@ -118,7 +129,22 @@ html {
                       text-align: center;
                       
                       a {
-                      
+                        text-decoration: none;
+                        border: 1px solid #CCC;
+                        padding: 10px;
+                        display: inline-block;
+                        margin: 10px;
+                        border-radius: 5px;
+                        color: @dark-grey;
+                        transition: transform .3s;
+
+                        &:visited {
+                          color: @dark-grey;
+                        }
+
+                        &:hover {
+                          transform: scale(1.1);
+                        }
                       }
                     }
                   }
@@ -168,7 +194,7 @@ html {
           div {
 
             &.survey_list {
-
+              grid-template-columns: repeat(2, 1fr);
             }
 
             &#image_carousel {
@@ -217,8 +243,6 @@ html {
             div{
 
               &.survey {
-                
-                flex-basis: 49%;
                 
                 h3 {
  
@@ -294,7 +318,7 @@ html {
           div {
 
             &.survey_list {
-
+              grid-template-columns: repeat(3, 1fr);
             }
 
             &#image_carousel {
@@ -335,7 +359,6 @@ html {
             div{
 
               &.survey {
-                flex-basis: 33%;
                 
                 h3 {
  
